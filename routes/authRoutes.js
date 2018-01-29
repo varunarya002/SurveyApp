@@ -22,5 +22,4 @@ app.get('/api/current_user',(req,resp)=>{
 	resp.send(req.user);
 	//resp.send(req.session);
 });
-
-});
+}
