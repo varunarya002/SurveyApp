@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+	margin: 0px;
+	padding: 0px;
+}
+/* #4EB1BA #E9E9E9*/
+.header {
+	background: silver;
+	padding: 10px;
+	color:blue;
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 6px solid #4EB1BA;
+}
+a{
+	font-family: 'Slabo 27px', serif;
+	border-radius: 3px;
+	margin: 2px;
+	padding: 10px;
+	font-size: 25px;
+	color:#E9E9E9;
+	text-decoration: none;
+}
+#home a:nth-child(1){
+	background: #4EB1BA;
+	display: flex;
+	justify-content: center;
+}
+#h-content a:nth-child(1):hover{
+	background: #db3236;
+	color: white;
+	transform: scale(1.1);
+	transition: 300ms all linear 100ms; 
+	cursor: pointer;
+	
+}
+#h-content a:nth-child(2):hover{
+	background: #3b5998;
+	color: white;
+	transform: scale(1.1);
+	transition: 300ms all linear 100ms; 
+	cursor: pointer;
+}
+#h-content{
+	display: flex;
+	justify-content: space-between;
+}
+@media screen and (max-width: 575px){
+	.header{
+		
+		flex-direction: column;
+		text-align: center;
+		align-items: stretch;
+	}
+	a{
+		margin: 0px;
+		padding: 2px;
+	}
+	
+	#h-content{
+		flex-direction: column;
+	}
+}
+.btn{
+	border: none;
+	height:50px;
+	width: 200px;
+	
+	font-family: 'Slabo 27px', serif;
+	margin: 2px;
+	padding: 10px;
+	font-size: 25px;
+	color:#E9E9E9;
+	text-decoration: none;
+	background: #3b5998;
+}
+.btn:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 300ms all linear 100ms; 
+}
